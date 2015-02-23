@@ -20,4 +20,7 @@
 *.mtc
 *.mtc1
 *.out
-*.synctex.gz 
+*.synctex.gz
+*.nav
+*.snm
+*.pdf
