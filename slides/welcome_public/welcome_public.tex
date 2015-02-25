@@ -94,15 +94,14 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{C2SM workshop\\Scientific Programming in Python}
 \author{
-  Harald von Waldow {\tiny(C2SM)}\hfill
-  Bas Crezee {\tiny(IAC/Atm.Dyn.)}\hfill\\
-  Nicolas Piaget {\tiny(IAC/Atm.Dyn.)}\hfill
-  Marina Dütsch {\tiny(IAC/Atm.Dyn.)}
+  Harald von Waldow {\tiny(C2SM/ETHZ)}\\
+  Nicolas Piaget {\tiny(Atm.Dyn./ETHZ)}\\
+  Timm Gross {\tiny(GIUB/UNIBE)}
 }
 
 
 
-\date{2014--09--11}
+\date{2015--02--11}
 
 \begin{document}
 
@@ -164,33 +163,35 @@
 
 \begin{frame}
   \frametitle{Organizational Matters}
-  \begin{block}{Room}
-    \begin{itemize}
-      \item Is not going top be locked during breaks.
-      \item Take your valuables with you.
-      \item Logout or lock screen
-    \end{itemize}
-  \end{block}
-\visible<2->{
+
+%\visible<2->{
   \begin{block}{IT-setup}
-    \begin{itemize}
+    \only<1>{
+      \includegraphics[width=0.98\textwidth]{setup.png}
+    }
+    \only<2> {
+      \footnotesize
+      \begin{itemize}
       \item On your local desktop runs a browser.
       \item The browser connects to a local port (7777), which is forwarded to a port on our server.
       \item On that server runs the IPython-process, one for everybody, and all data resides there.
-      \item That server is \texttt{iacdipl-3.ethz.ch}. You should not need to worry about that.
-    \end{itemize}
-  \end{block}}
+      \item That server is \texttt{climcal04.unibe.ch}. You should not need to worry about that.
+      \end{itemize}
+    }
+  \end{block}
+%}
+
 \end{frame}
 
 \begin{frame}
   \frametitle{Organizational Matters}
   \begin{block}{Login}
     \begin{itemize}
-      \item username: \texttt{c2smXX}
-      \item \texttt{XX} is \texttt{02} \ldots \texttt{19}  
+      \item username: \texttt{pywsXX}
+      \item \texttt{XX} is \texttt{01} \ldots \texttt{17}  
       \item password: \texttt{--- censored ---}
-      \item After login wait 10 sec or so \ldots
-      \item In case of password-asking pop-up window: Click``cancel''.
+      \item After login start a terminal window
+      \item type ``./startup''
       \item the browser should start and load the proper page.
     \end{itemize}
   \end{block}
